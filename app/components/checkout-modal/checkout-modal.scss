@@ -1,0 +1,22 @@
+.modal {
+  width: 550px;
+  min-height: 305px;
+  @media (max-width: 550px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    width: 95%;
+    @media (max-width: 550px) {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+}
+
+.subscribe-btn {
+  min-width: 140px;
+}

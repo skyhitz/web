@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+.loading-overlay {
+  background-image: url("https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_64/v1512418696/web/skyhitz_logo_tzt0kr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 51.2px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #16171a;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.fade-entering {
+  opacity: .01;
+}
+
+.fade-entered {
+  opacity: 1;
+  transition: opacity 100ms ease;
+}
+
+.fade-exiting {
+  opacity: .01;
+  transition: opacity 100ms ease-in;
+}

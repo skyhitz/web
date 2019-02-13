@@ -1,0 +1,50 @@
+.auth-step-container {
+  height: 200px;
+}
+
+.facebook-button {
+  padding: 0;
+  background: #4267b2 !important;
+  color: white !important;
+  border: none;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  .fa {
+    margin-right: 8px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 14px;
+  }
+}
+
+.signin-column {
+  width: 46%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hor-divider {
+  width: 8%;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook-signin-error {
+  height: 38px;
+  width: 100%;
+  margin: 0 auto 30px;
+  cursor: pointer;
+  color: #d9544f;
+  text-decoration: underline;
+  font-size: 12px;
+
+  a,
+  a:hover {
+    color: #d9544f;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+}
