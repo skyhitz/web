@@ -9,6 +9,9 @@ jobs:
           name: Update yarn
           command: sudo npm install --global yarn
       - run:
+          name: Update now
+          command: sudo npm install -g now
+      - run:
           name: Install node modules
           command: yarn
       - run:
