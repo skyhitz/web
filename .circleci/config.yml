@@ -18,6 +18,12 @@ jobs:
           name: Install node modules
           command: yarn now-build
       - run:
+          name: Install node modules
+          command: yarn now-build
+      - run:
+          name: Export now key
+          command: echo $NOW_KEY | base64 --decode --ignore-garbage > ~/.now/auth.json
+      - run:
           name: Deploy to now
           command: now
 workflows:
