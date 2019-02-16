@@ -30,11 +30,8 @@ jobs:
           name: Deploy to now
           command: now
       - run:
-          name: Set url variable
-          command: export DEPLOY_URL=$(pbpaste)
-      - run:
           name: Alias site
-          command: now alias $DEPLOY_URL $SITE_URL
+          command: now alias $SITE_URL
 workflows:
   version: 2
   build-web-staging-context:
