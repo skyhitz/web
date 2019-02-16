@@ -28,10 +28,7 @@ jobs:
           command: sed -i "s/@SKYHITZ_ENV/$SKYHITZ_ENV/g" next.config.js && sed -i "s/@FACEBOOK_APP_ID/$FACEBOOK_APP_ID/g" next.config.js && sed -i "s/@STRIPE_PUBLISHABLE_KEY/$STRIPE_PUBLISHABLE_KEY/g" next.config.js
       - run:
           name: Deploy to now
-          command: now
-      - run:
-          name: Alias site
-          command: now alias $SITE_URL
+          command: if [ $SKYHITZ_ENV -eq production ]; then now && now alias else now && now alias -A ./now.staging.json fi
 workflows:
   version: 2
   build-web-staging-context:
