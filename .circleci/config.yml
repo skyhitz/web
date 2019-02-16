@@ -10,7 +10,7 @@ jobs:
           command: sudo npm install --global yarn
       - run:
           name: Update now
-          command: sudo npm install -g --unsafe-perm now
+          command: sudo npm install -g --unsafe-perm now@13.1.3
       - run:
           name: Install node modules
           command: yarn
