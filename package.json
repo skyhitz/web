@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "now-build": "next build",
+    "dev": "next dev",
     "start": "next start",
     "export": "next export",
-    "analyze": "BUNDLE_ANALYZE=both yarn build"
+    "analyze": "BUNDLE_ANALYZE=both yarn now-build"
   },
   "author": "Alejo Mendoza",
   "license": "ISC",
