@@ -24,6 +24,9 @@ jobs:
           name: Export now key
           command: mkdir ${HOME}/.now && echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
       - run:
+          name: Echo now key
+          command: echo $STRIPE_PUBLISHABLE_KEY
+      - run:
           name: Deploy to now
           command: now -e SKYHITZ_ENV="$SKYHITZ_ENV" -e FACEBOOK_APP_ID="$FACEBOOK_APP_ID" -e STRIPE_PUBLISHABLE_KEY="$STRIPE_PUBLISHABLE_KEY"
 workflows:
