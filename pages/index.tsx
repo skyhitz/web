@@ -31,6 +31,12 @@ library.add(
 export default class extends React.PureComponent {
   componentDidMount() {
     console.log('env: ', process.env.SKYHITZ_ENV);
+    if (
+      process.env.SKYHITZ_ENV !== 'production' &&
+      process.env.SKYHITZ_ENV !== 'staging'
+    ) {
+      return;
+    }
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
