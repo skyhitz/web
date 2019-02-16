@@ -6,7 +6,6 @@
   "scripts": {
     "now-build": "next build",
     "dev": "next dev",
-    "start": "next start",
     "export": "next export",
     "analyze": "BUNDLE_ANALYZE=both yarn now-build"
   },
@@ -26,6 +25,7 @@
     "express": "^4.16.3",
     "mobx-react": "^4.3.3",
     "next": "^8.0.0",
+    "next-compose-plugins": "^2.1.1",
     "no-scroll": "2.1.1",
     "prop-types": "15.6.2",
     "react": "^16.2.0",
@@ -37,7 +37,7 @@
     "react-minimalist-portal": "2.3.1",
     "react-stripe-elements": "^2.0.1",
     "react-transition-group": "^2.4.0",
-    "skyhitz-common": "skyhitz/common.git#ef01af0aac5510843c9daae02e702532eadddcd8",
+    "skyhitz-common": "skyhitz/common.git#46b832ae24bd95389c57678f837fd6011c7457d3",
     "swiper": "3.4.0"
   },
   "devDependencies": {
