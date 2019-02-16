@@ -24,8 +24,11 @@ jobs:
           name: Export now key
           command: mkdir ${HOME}/.now && echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
       - run:
+          name: Set env variables
+          command: sed -i "s/@SKYHITZ_ENV/$SKYHITZ_ENV/g" now.json && sed -i "s/@FACEBOOK_APP_ID/$FACEBOOK_APP_ID/g" now.json && sed -i "s/@STRIPE_PUBLISHABLE_KEY/$STRIPE_PUBLISHABLE_KEY/g" now.json
+      - run:
           name: Deploy to now
-          command: now -e SKYHITZ_ENV=$SKYHITZ_ENV -e FACEBOOK_APP_ID=$FACEBOOK_APP_ID -e STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY
+          command: now
 workflows:
   version: 2
   build-web-staging-context:

@@ -10,5 +10,10 @@
       }
     }
   ],
-  "builds": [{ "src": "package.json", "use": "@now/next" }]
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "env": {
+    "SKYHITZ_ENV": "@SKYHITZ_ENV",
+    "FACEBOOK_APP_ID": "@FACEBOOK_APP_ID",
+    "STRIPE_PUBLISHABLE_KEY": "@STRIPE_PUBLISHABLE_KEY"
+  }
 }
