@@ -10,7 +10,7 @@ jobs:
           command: sudo npm install --global yarn
       - run:
           name: Update now
-          command: sudo npm install -g now
+          command: sudo npm install -g --unsafe-perm now
       - run:
           name: Install node modules
           command: yarn
@@ -22,7 +22,7 @@ jobs:
           command: yarn now-build
       - run:
           name: Export now key
-          command: mkdir ${HOME}/.now && echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
+          command: echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
       - run:
           name: Deploy to now
           command: now
