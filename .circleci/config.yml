@@ -22,7 +22,7 @@ jobs:
           command: yarn now-build
       - run:
           name: Export now key
-          command: echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
+          command: mkdir ${HOME}/.now && echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
       - run:
           name: Deploy to now
           command: now
