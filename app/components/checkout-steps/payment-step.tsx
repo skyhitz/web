@@ -9,7 +9,8 @@ import './payment-step.scss';
   refreshSubscription: stores.paymentsStore.refreshSubscription.bind(
     stores.paymentsStore
   ),
-  subscriptionLoaded: stores.paymentsStore.subscriptionLoaded
+  subscriptionLoaded: stores.paymentsStore.subscriptionLoaded,
+  submittingSubscription: stores.paymentsStore.submittingSubscription
 }))
 class CardCheckout extends Component<any, any> {
   constructor(props) {
@@ -25,6 +26,19 @@ class CardCheckout extends Component<any, any> {
     const { id } = token;
     const subscribed = await this.props.subscribeUser(id);
     if (subscribed) console.log('Purchase Complete!');
+  }
+
+  renderSubscribeBtn() {
+    if (this.props.submittingSubscription) {
+      return (
+        <button className='submit-payment'>Submitting Transaction...</button>
+      );
+    }
+    return (
+      <button onClick={this.submit.bind(this)} className='submit-payment'>
+        Submit Payment
+      </button>
+    );
   }
 
   render() {
@@ -45,9 +59,7 @@ class CardCheckout extends Component<any, any> {
     return (
       <div className='checkout-wrap'>
         <CardElement hidePostalCode={true} />
-        <button onClick={this.submit.bind(this)} className='submit-payment'>
-          Submit Payment
-        </button>
+        {this.renderSubscribeBtn()}
       </div>
     );
   }

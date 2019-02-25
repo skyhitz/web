@@ -6318,9 +6318,9 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-skyhitz-common@skyhitz/common.git#46b832ae24bd95389c57678f837fd6011c7457d3:
+skyhitz-common@skyhitz/common.git#7e2722758aa7391d9f97b295d92fdcc581a96517:
   version "0.0.17"
-  resolved "https://codeload.github.com/skyhitz/common/tar.gz/46b832ae24bd95389c57678f837fd6011c7457d3"
+  resolved "https://codeload.github.com/skyhitz/common/tar.gz/7e2722758aa7391d9f97b295d92fdcc581a96517"
   dependencies:
     "@types/algoliasearch" "^3.30.1"
     "@types/node" "^8.0.31"
