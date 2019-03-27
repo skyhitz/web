@@ -4,15 +4,15 @@ import Colors from 'app/components/colors/colors';
 import CheckoutModal from '../checkout-modal/checkout-modal';
 
 const RewardsSection = () => (
-  <div className='wrapper'>
-    <div className='screens-column'>
+  <div className="wrapper">
+    <div className="screens-column">
       <RewardsScreenshot />
     </div>
-    <div className='info-column'>
-      <h2 className='title'>Directly reward music and artists you love.</h2>
-      <p className='description'>
+    <div className="info-column">
+      <h2 className="title">Directly reward music and artists you love.</h2>
+      <p className="description">
         We believe in compensating creators for the value they provide to you.
-        That's why your $3.99/month supports the music you connect with most.
+        That's why your $6.99/month supports the music you connect with most.
         The more creations you support, the more you will gain reputation as a
         talent scout.
       </p>

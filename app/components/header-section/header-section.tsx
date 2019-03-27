@@ -3,11 +3,11 @@ import { Component } from 'react';
 class HeaderSection extends Component {
   render() {
     return (
-      <section className='promo-section'>
-        <div className='container'>
-          <div className='section-heading'>
+      <section className="promo-section">
+        <div className="container">
+          <div className="section-heading">
             <h2>Empower creators</h2>
-            <p>Help us transform the music industry for $3.99/month.</p>
+            <p>Help us transform the music industry for $6.99/month.</p>
           </div>
         </div>
         <style jsx>{`
