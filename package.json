@@ -37,7 +37,7 @@
     "react-minimalist-portal": "2.3.1",
     "react-stripe-elements": "^2.0.1",
     "react-transition-group": "^2.4.0",
-    "skyhitz-common": "skyhitz/common.git#7e2722758aa7391d9f97b295d92fdcc581a96517",
+    "skyhitz-common": "skyhitz/common.git#ba389a03bdc4ab927c12e4b79b42f6d572632ee3",
     "swiper": "3.4.0"
   },
   "devDependencies": {
