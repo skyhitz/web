@@ -27,7 +27,10 @@ jobs:
           name: Set env variables
           command: sed -i "s/@SKYHITZ_ENV/$SKYHITZ_ENV/g" next.config.js && sed -i "s/@FACEBOOK_APP_ID/$FACEBOOK_APP_ID/g" next.config.js && sed -i "s/@STRIPE_PUBLISHABLE_KEY/$STRIPE_PUBLISHABLE_KEY/g" next.config.js
       - run:
-          name: Deploy to now
+          name: Deploy
+          command: now --target $SKYHITZ_ENV
+      - run:
+          name: Alias
           command: now alias $(now) $SITE_URL
 workflows:
   version: 2
