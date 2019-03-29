@@ -10,6 +10,7 @@ class HeaderSection extends Component {
             <p>Help us transform the music industry for $6.99/month.</p>
           </div>
         </div>
+
         <style jsx>{`
           .promo-section {
             padding: 45px 0;
