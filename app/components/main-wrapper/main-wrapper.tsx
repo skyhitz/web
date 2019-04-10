@@ -5,15 +5,16 @@ import AppButton from 'app/components/app-button/app-button';
 export default class MainWrapper extends React.Component {
   render() {
     return (
-      <div className='wrapper'>
-        <div className='column'>
-          <h1 className='title'>Influence the world of music.</h1>
-          <h2 className='subtitle'>
-            Gain reputation as a talent scout by supporting the music you love.
+      <div className="wrapper">
+        <div className="column">
+          <h1 className="title">Earn crypto with your music</h1>
+          <h2 className="subtitle">
+            Generate recurring revenue from your music videos, get paid anywhere
+            in the world.
           </h2>
           <AppButton />
         </div>
-        <div className='screens-column'>
+        <div className="screens-column">
           <PhoneScreenShots />
         </div>
         <style jsx>{`

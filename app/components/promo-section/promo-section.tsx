@@ -3,36 +3,34 @@ import Colors from 'app/components/colors/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PromoSection = () => (
-  <section className='promo-section'>
-    <div className='container'>
-      <div className='row'>
-        <div className='col-md-4 xs-padding'>
-          <div className='promo_content text-center'>
-            <div className='icon'>
-              <FontAwesomeIcon icon={['fas', 'ban']} size='2x' />
+  <section className="promo-section">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-4 xs-padding">
+          <div className="promo_content text-center">
+            <div className="icon">
+              <FontAwesomeIcon icon={['fas', 'ban']} size="2x" />
             </div>
             <h3>No Ads experience</h3>
             <p>Stream music for as long as you want without interruptions.</p>
           </div>
         </div>
-        <div className='col-md-4 xs-padding'>
-          <div className='promo_content text-center'>
-            <div className='icon'>
-              <FontAwesomeIcon icon={['fas', 'list-ul']} size='2x' />
+        <div className="col-md-4 xs-padding">
+          <div className="promo_content text-center">
+            <div className="icon">
+              <FontAwesomeIcon icon={['fas', 'list-ul']} size="2x" />
             </div>
             <h3>Create Playlists</h3>
             <p>Access and manage all of your favorite music videos.</p>
           </div>
         </div>
-        <div className='col-md-4 xs-padding'>
-          <div className='promo_content text-center'>
-            <div className='icon'>
-              <FontAwesomeIcon icon={['fas', 'coins']} size='2x' />
+        <div className="col-md-4 xs-padding">
+          <div className="promo_content text-center">
+            <div className="icon">
+              <FontAwesomeIcon icon={['fas', 'coins']} size="2x" />
             </div>
             <h3>Tip your favorite videos</h3>
-            <p>
-              Gain reputation for supporting the best music at an early stage.
-            </p>
+            <p>Give visibility to the music you like.</p>
           </div>
         </div>
       </div>

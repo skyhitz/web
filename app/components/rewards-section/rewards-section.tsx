@@ -11,10 +11,10 @@ const RewardsSection = () => (
     <div className="info-column">
       <h2 className="title">Directly reward music and artists you love.</h2>
       <p className="description">
-        We believe in compensating creators for the value they provide to you.
-        That's why your $6.99/month supports the music you connect with most.
-        The more creations you support, the more you will gain reputation as a
-        talent scout.
+        We believe in compensating creators for the value they provide. That's
+        why your $6.99/month supports the music you connect with most. The more
+        creations you support, the more you will gain reputation in our
+        community.
       </p>
       <CheckoutModal />
     </div>
