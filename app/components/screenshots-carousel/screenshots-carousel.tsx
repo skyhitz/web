@@ -26,45 +26,45 @@ class ScreenshotsCarousel extends React.Component {
       }
     };
     return (
-      <section className='screenshots-carousel'>
-        <div className='container'>
-          <div className='screen-wrap'>
+      <section className="screenshots-carousel">
+        <div className="container">
+          <div className="screen-wrap">
             <LazyLoad height={534}>
               <ReactSwiper options={options}>
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735784/web/35049668_10160461733205313_7096240980445102080_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2556.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735785/web/34728574_10160461732420313_3753912278399844352_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2554.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735785/web/34723669_10160461732655313_8482772817207623680_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2552.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735785/web/34881876_10160461732835313_2718135572999700480_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2551.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735785/web/34779970_10160461732580313_4444142062924726272_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2553.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735784/web/34728309_10160461733120313_686459400239448064_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2550.jpg"
+                  alt="skyhitz logo"
                 />
                 <img
-                  className='screenshot'
-                  src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1530735784/web/34859358_10160461733325313_2544391230909841408_n.jpg'
-                  alt='skyhitz logo'
+                  className="screenshot"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940751/web/IMG_2555.jpg"
+                  alt="skyhitz logo"
                 />
               </ReactSwiper>
             </LazyLoad>
