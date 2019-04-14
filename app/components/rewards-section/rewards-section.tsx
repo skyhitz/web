@@ -18,6 +18,7 @@ const RewardsSection = () => (
       </p>
       <CheckoutModal />
     </div>
+
     <style jsx>{`
       .icons-wrap {
         display: inline-block;

@@ -25,7 +25,6 @@ export class AuthStep extends React.Component<any, any> {
       });
     }
   }
-
   render() {
     return (
       <div className="auth-step-container">
