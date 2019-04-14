@@ -14,8 +14,7 @@ let nextConfig = {
   env: {
     SKYHITZ_ENV: '@SKYHITZ_ENV',
     FACEBOOK_APP_ID: '@FACEBOOK_APP_ID',
-    STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY',
-    NODE_ENV: 'production'
+    STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY'
   },
   exportPathMap: function() {
     return {

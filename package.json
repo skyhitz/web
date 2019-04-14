@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "now-build": "next build",
+    "now-build": "NODE_ENV=production next build",
     "dev": "next dev",
-    "export": "next export",
+    "export": "NODE_ENV=production next export",
     "analyze": "BUNDLE_ANALYZE=both yarn now-build"
   },
   "author": "Alejo Mendoza",
