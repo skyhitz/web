@@ -13,7 +13,6 @@ let nextConfig = {
   target: 'serverless',
   env: {
     SKYHITZ_ENV: '@SKYHITZ_ENV',
-    FACEBOOK_APP_ID: '@FACEBOOK_APP_ID',
     STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY'
   },
   exportPathMap: function() {
