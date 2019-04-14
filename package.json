@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "now-build": "next build",
-    "dev": "next dev",
+    "dev": "SKYHITZ_ENV=staging next dev",
     "export": "next export",
     "analyze": "BUNDLE_ANALYZE=both yarn now-build"
   },
@@ -37,7 +37,7 @@
     "react-minimalist-portal": "2.3.1",
     "react-stripe-elements": "^2.0.1",
     "react-transition-group": "^2.4.0",
-    "skyhitz-common": "skyhitz/common.git#3b3869b7d20802e7ea5ced95c88f5fb3a33c8243",
+    "skyhitz-common": "skyhitz/common.git#ad2d5e8dbcfe3155e3881246ac928f71e7808619",
     "swiper": "3.4.0"
   },
   "devDependencies": {
