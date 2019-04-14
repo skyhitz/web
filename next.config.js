@@ -26,9 +26,6 @@ let nextConfig = {
   webpack(config, options) {
     const { dir, defaultLoaders, isServer, dev } = options;
 
-    config.optimization = {
-      nodeEnv: false
-    };
     extractCSSPlugin = new MiniCssExtractPlugin({
       filename: 'static/[name].css'
     });
