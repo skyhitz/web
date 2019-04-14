@@ -22,7 +22,7 @@ jobs:
           command: mkdir ${HOME}/.now && echo $NOW_KEY | base64 --decode --ignore-garbage > ${HOME}/.now/auth.json
       - run:
           name: Set env variables
-          command: sed -i "s/@SKYHITZ_ENV/$SKYHITZ_ENV/g" next.config.js && sed -i "s/@FACEBOOK_APP_ID/$FACEBOOK_APP_ID/g" next.config.js && sed -i "s/@STRIPE_PUBLISHABLE_KEY/$STRIPE_PUBLISHABLE_KEY/g" next.config.js
+          command: sed -i "s/@SKYHITZ_ENV/$SKYHITZ_ENV/g" next.config.js && sed -i "s/@STRIPE_PUBLISHABLE_KEY/$STRIPE_PUBLISHABLE_KEY/g" next.config.js
       - run:
           name: Alias
           command: now alias $(now) $SITE_URL
