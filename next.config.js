@@ -94,7 +94,7 @@ module.exports = withPlugins(
           ]
         }
       },
-      [PHASE_PRODUCTION_BUILD, PHASE_DEVELOPMENT_SERVER]
+      [PHASE_PRODUCTION_BUILD]
     ],
     [
       optional(() => require('@zeit/next-bundle-analyzer')),
