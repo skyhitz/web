@@ -1,17 +1,7 @@
 import React from 'react';
 
 const PhoneScreenShots = () => (
-  <div className='screen'>
-    <img
-      className='android'
-      src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_220/v1512668560/web/androidscreenweb_d8zpxh.png'
-      alt='android'
-    />
-    <img
-      className='phone'
-      src='https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_198/v1512621179/web/iphonescreenweb_h1p6gc.png'
-      alt='iphone'
-    />
+  <div className="screen">
     <style jsx>{`
       .android {
         position: absolute;

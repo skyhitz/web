@@ -14,9 +14,6 @@ export default class MainWrapper extends React.Component {
           </h2>
           <AppButton />
         </div>
-        <div className="screens-column">
-          <PhoneScreenShots />
-        </div>
         <style jsx>{`
           .wrapper {
             margin: 0px auto;
@@ -56,7 +53,18 @@ export default class MainWrapper extends React.Component {
             text-align: center;
             letter-spacing: 2px;
             max-width: 415px;
-            margin: 15px auto;
+            margin: 15px auto 30px auto;
+            line-height: 1.5;
+          }
+
+          @media (max-width: 849px) {
+            .wrapper {
+              height: 260px;
+            }
+            .column {
+              width: 100%;
+              padding-top: 40px;
+            }
           }
 
           @media (max-width: 420px) {
@@ -85,7 +93,7 @@ export default class MainWrapper extends React.Component {
               width: 50%;
             }
             .column {
-              width: 50%;
+              width: 100%;
               padding-top: 100px;
             }
           }
