@@ -1,13 +1,9 @@
 import React from 'react';
-import RewardsScreenshot from 'app/components/rewards-screenshot/rewards-screenshot';
 import Colors from 'app/components/colors/colors';
 import CheckoutModal from '../checkout-modal/checkout-modal';
 
 const RewardsSection = () => (
   <div className="wrapper">
-    <div className="screens-column">
-      <RewardsScreenshot />
-    </div>
     <div className="info-column">
       <h2 className="title">Directly reward music and artists you love.</h2>
       <p className="description">
@@ -39,7 +35,7 @@ const RewardsSection = () => (
         font-family: Raleway;
         padding-top: 35px;
         max-width: 800px;
-        height: 560px;
+        height: 360px;
       }
       .btn-wrap {
         margin: 0 auto;
@@ -105,7 +101,7 @@ const RewardsSection = () => (
         color: white;
         letter-spacing: 1px;
         max-width: 415px;
-        margin: 35px auto 15px auto;
+        margin: 35px auto;
         line-height: 1.5;
       }
 
@@ -123,11 +119,8 @@ const RewardsSection = () => (
           font-size: 40px;
           font-weight: 400;
         }
-        .screens-column {
-          width: 50%;
-        }
         .info-column {
-          width: 50%;
+          width: 100%;
           padding-top: 80px;
         }
       }
