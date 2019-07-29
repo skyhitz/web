@@ -41,7 +41,7 @@ class HeadComponent extends React.Component {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/skyhitz/image/upload/v1512780194/web/socialmedia.png"
+          content="https://res.cloudinary.com/skyhitz/image/upload/v1564436559/web/android-landing-google-store-link.png"
         />
         <meta property="og:url" content="https://skyhitz.io" />
         <meta property="fb:app_id" content="564403243666491" />
