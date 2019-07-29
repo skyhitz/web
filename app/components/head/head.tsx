@@ -5,7 +5,7 @@ class HeadComponent extends React.Component {
   render() {
     return (
       <Head>
-        <meta name="title" content="Skyhitz - Earn crypto with your music" />
+        <meta name="title" content="Skyhitz - Earn crypto with music" />
         <meta
           name="description"
           content="Generate recurring revenue from your music videos, get paid anywhere in the world."
@@ -48,7 +48,7 @@ class HeadComponent extends React.Component {
         <meta property="og:site_name" content="Skyhitz" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000" />
-        <title>Skyhitz - Earn crypto with your music</title>
+        <title>Skyhitz - Earn crypto with music</title>
         <link rel="canonical" href="https://skyhitz.io" />
         <link rel="manifest" href="/static/manifest.json" />
         <link

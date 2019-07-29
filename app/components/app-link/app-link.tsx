@@ -20,7 +20,7 @@ export default class AppLink extends React.Component<Props> {
       appUrl = 'https://itunes.apple.com/us/app/skyhitz/id1105406020';
     }
     return (
-      <a href={appUrl} target='_blank' rel='noopener'>
+      <a href={appUrl} target="_blank" rel="noopener">
         {this.props.children}
       </a>
     );

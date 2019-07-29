@@ -1,21 +1,27 @@
 .email-input {
   width: 100%;
+  font-size: 16px;
 }
 
 .submit-btn {
   width: 100%;
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .error-container {
   height: 38px;
   width: 100%;
-  color: #d9544f;
-  font-size: 12px;
+  color: #ce4742;
+  font-size: 14px;
+  font-weight: 800;
 
   a,
   a:hover {
-    color: #d9544f;
+    color: #ce4742;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 800;
   }
 }

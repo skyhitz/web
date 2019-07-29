@@ -9,10 +9,10 @@
     "no-trailing-whitespace": true,
     "no-var-keyword": false,
     "one-line": [true, "check-open-brace", "check-whitespace"],
-    "quotemark": [true, "single", "avoid-escape"],
     "semicolon": [true, "always"],
     "triple-equals": [true, "allow-null-check"],
     "jsx-self-close": true,
+    "jsx-quotes": ["error", "prefer-single"],
     "typedef-whitespace": [
       true,
       {
@@ -31,6 +31,12 @@
       "check-operator",
       "check-separator",
       "check-type"
-    ]
-  }
+    ],
+    "member-access": false,
+    "ordered-imports": false,
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false
+  },
+  "extends": ["tslint:latest", "tslint-config-prettier"]
 }
