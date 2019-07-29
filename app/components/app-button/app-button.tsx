@@ -1,20 +1,20 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import AppLink from '../app-link/app-link';
 
 export default class AppButton extends React.Component {
-  render() {
+  public render() {
     return (
-      <div className='btn-wrap'>
+      <div className="btn-wrap">
         <AppLink>
           <button>
             Get the app
-            <div className='icons-wrap'>
-              <div className='icon'>
-                <FontAwesomeIcon icon={['fab', 'apple']} size='2x' />
+            <div className="icons-wrap">
+              <div className="icon">
+                <FontAwesomeIcon icon={['fab', 'apple']} size="2x" />
               </div>
-              <div className='icon'>
-                <FontAwesomeIcon icon={['fab', 'android']} size='2x' />
+              <div className="icon">
+                <FontAwesomeIcon icon={['fab', 'android']} size="2x" />
               </div>
             </div>
           </button>
@@ -22,7 +22,7 @@ export default class AppButton extends React.Component {
         <style jsx>{`
           .icons-wrap {
             display: inline-block;
-            width: 50px;
+            width: 70px;
           }
           .icon {
             top: 4px;
@@ -31,7 +31,7 @@ export default class AppButton extends React.Component {
             display: inline-block;
           }
           .btn-wrap {
-            margin: 0 auto;
+            margin: 35px auto 0 auto;
             width: auto;
             text-align: center;
             cursor: pointer;

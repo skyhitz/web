@@ -4,7 +4,7 @@ import LazyLoad from 'react-lazyload';
 
 class ScreenshotsCarousel extends React.Component {
   render() {
-    let options = {
+    const options = {
       mode: 'horizontal',
       loop: true,
       speed: 1000,
@@ -18,12 +18,12 @@ class ScreenshotsCarousel extends React.Component {
       prevButton: '.arrow-left',
       keyboardControl: true,
       coverflow: {
-        rotate: 0,
-        stretch: 90,
         depth: 200,
         modifier: 1,
-        slideShadows: true
-      }
+        rotate: 0,
+        slideShadows: true,
+        stretch: 90,
+      },
     };
     return (
       <section className="screenshots-carousel">
@@ -33,37 +33,32 @@ class ScreenshotsCarousel extends React.Component {
               <ReactSwiper options={options}>
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2556.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.13.48.png"
                   alt="skyhitz logo"
                 />
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2554.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.19.52.png"
                   alt="skyhitz logo"
                 />
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940723/web/IMG_2552.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.20.07.png"
                   alt="skyhitz logo"
                 />
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2551.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.20.12.png"
                   alt="skyhitz logo"
                 />
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2553.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.20.02.png"
                   alt="skyhitz logo"
                 />
                 <img
                   className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940722/web/IMG_2550.jpg"
-                  alt="skyhitz logo"
-                />
-                <img
-                  className="screenshot"
-                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1554940751/web/IMG_2555.jpg"
+                  src="https://res.cloudinary.com/skyhitz/image/upload/c_scale,q_auto,w_300/v1563906313/web/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-23_at_13.17.20.png"
                   alt="skyhitz logo"
                 />
               </ReactSwiper>

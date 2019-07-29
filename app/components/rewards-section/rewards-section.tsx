@@ -88,7 +88,7 @@ const RewardsSection = () => (
       .title {
         font-family: Raleway;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 30px;
         color: white;
         text-align: center;
         max-width: 415px;
@@ -97,7 +97,7 @@ const RewardsSection = () => (
       .description {
         font-family: Raleway;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 18px;
         color: white;
         letter-spacing: 1px;
         max-width: 415px;
@@ -107,7 +107,7 @@ const RewardsSection = () => (
 
       @media (max-width: 420px) {
         .title {
-          font-size: 20px;
+          font-size: 24px;
         }
         .description {
           font-size: 12px;
@@ -116,7 +116,7 @@ const RewardsSection = () => (
 
       @media (min-width: 850px) {
         .title {
-          font-size: 40px;
+          font-size: 44px;
           font-weight: 400;
         }
         .info-column {
