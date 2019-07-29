@@ -35,7 +35,8 @@
     "member-access": false,
     "ordered-imports": false,
     "no-implicit-dependencies": false,
-    "no-submodule-imports": false
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false
   },
   "extends": ["tslint:latest", "tslint-config-prettier"]
 }
