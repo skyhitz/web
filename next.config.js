@@ -11,7 +11,6 @@ const {
 
 let nextConfig = {
   target: 'serverless',
-  crossOrigin: 'anonymous',
   env: {
     SKYHITZ_ENV: '@SKYHITZ_ENV',
     STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY',
