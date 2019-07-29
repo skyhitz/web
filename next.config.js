@@ -6,27 +6,28 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const {
   PHASE_PRODUCTION_BUILD,
-  PHASE_DEVELOPMENT_SERVER
+  PHASE_DEVELOPMENT_SERVER,
 } = require('next/constants');
 
 let nextConfig = {
   target: 'serverless',
+  crossOrigin: 'anonymous',
   env: {
     SKYHITZ_ENV: '@SKYHITZ_ENV',
-    STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY'
+    STRIPE_PUBLISHABLE_KEY: '@STRIPE_PUBLISHABLE_KEY',
   },
   exportPathMap: function() {
     return {
       '/': { page: '/' },
       '/terms-of-use': { page: '/terms-of-use' },
-      '/privacy-policy': { page: '/privacy-policy' }
+      '/privacy-policy': { page: '/privacy-policy' },
     };
   },
   webpack(config, options) {
     const { dir, defaultLoaders, isServer, dev } = options;
 
     extractCSSPlugin = new MiniCssExtractPlugin({
-      filename: 'static/[name].css'
+      filename: 'static/[name].css',
     });
     config.plugins.push(extractCSSPlugin);
 
@@ -34,19 +35,19 @@ let nextConfig = {
       test: /\.scss$/,
       use: [
         {
-          loader: MiniCssExtractPlugin.loader
+          loader: MiniCssExtractPlugin.loader,
         },
         {
           loader: 'css-loader',
           options: {
             minimize: !dev,
-            sourceMap: dev
-          }
+            sourceMap: dev,
+          },
         },
         {
-          loader: 'sass-loader'
-        }
-      ]
+          loader: 'sass-loader',
+        },
+      ],
     });
 
     config.module.rules.push({
@@ -56,14 +57,14 @@ let nextConfig = {
         {
           loader: 'ts-loader',
           options: {
-            transpileOnly: true
-          }
-        }
-      ]
+            transpileOnly: true,
+          },
+        },
+      ],
     });
 
     return config;
-  }
+  },
 };
 
 module.exports = withPlugins(
@@ -83,17 +84,17 @@ module.exports = withPlugins(
                 networkTimeoutSeconds: 15,
                 expiration: {
                   maxEntries: 150,
-                  maxAgeSeconds: 30 * 24 * 60 * 60 // 1 month
+                  maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
                 },
                 cacheableResponse: {
-                  statuses: [0, 200]
-                }
-              }
-            }
-          ]
-        }
+                  statuses: [0, 200],
+                },
+              },
+            },
+          ],
+        },
       },
-      [PHASE_PRODUCTION_BUILD]
+      [PHASE_PRODUCTION_BUILD],
     ],
     [
       optional(() => require('@zeit/next-bundle-analyzer')),
@@ -105,16 +106,16 @@ module.exports = withPlugins(
         bundleAnalyzerConfig: {
           server: {
             analyzerMode: 'static',
-            reportFilename: '../../bundles/server.html'
+            reportFilename: '../../bundles/server.html',
           },
           browser: {
             analyzerMode: 'static',
-            reportFilename: '../bundles/client.html'
-          }
-        }
+            reportFilename: '../bundles/client.html',
+          },
+        },
       },
-      [PHASE_DEVELOPMENT_SERVER]
-    ]
+      [PHASE_DEVELOPMENT_SERVER],
+    ],
   ],
   nextConfig
 );
