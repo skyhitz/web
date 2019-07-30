@@ -16,8 +16,8 @@ const PromoSection = () => (
               </svg>
               <h3>Tip with XLM</h3>
               <p>
-                Support and give visibility to the music you like with one the
-                best cryptocurrencies.
+                Support and give visibility to new music with one the best
+                cryptocurrencies.
               </p>
             </div>
           </a>
@@ -34,10 +34,10 @@ const PromoSection = () => (
         <div className="col-md-4 xs-padding">
           <div className="promo_content text-center">
             <div className="icon">
-              <FontAwesomeIcon icon={['fas', 'list-ul']} size="2x" />
+              <FontAwesomeIcon icon={['fas', 'trophy']} size="2x" />
             </div>
-            <h3>Manage your digital assets</h3>
-            <p>Access and manage all of your music videos.</p>
+            <h3>Discover uprising talent</h3>
+            <p>Get reputation for discovering great music.</p>
           </div>
         </div>
       </div>
