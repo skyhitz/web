@@ -8,8 +8,9 @@ export default class MainWrapper extends React.Component {
         <div className="column">
           <h1 className="title">Earn crypto with music</h1>
           <h2 className="subtitle">
-            Discover, stream, and share music videos with the world. Generate
-            recurring revenue from fans, get paid instantly anywhere you are.
+            Platform where artists can generate revenue from their music videos.
+            Fans can discover, stream and upvote their favorite music without
+            limits.
           </h2>
           <AppButton />
         </div>

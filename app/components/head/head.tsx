@@ -8,7 +8,7 @@ class HeadComponent extends React.Component {
         <meta name="title" content="Skyhitz - Earn crypto with music" />
         <meta
           name="description"
-          content="Generate recurring revenue from your music videos, get paid anywhere in the world."
+          content="Platform where artists can generate revenue from their music videos. Fans can discover, stream and upvote their favorite music without limits."
         />
         <meta
           name="keywords"
@@ -18,7 +18,7 @@ class HeadComponent extends React.Component {
         <meta name="twitter:site" content="@skyhitzio" />
         <meta
           name="twitter:description"
-          content="Generate recurring revenue from your music videos, get paid anywhere in the world."
+          content="Platform where artists can generate revenue from their music videos. Fans can discover, stream and upvote their favorite music without limits."
         />
         <meta name="twitter:app:country" content="US" />
         <meta name="twitter:app:name:iphone" content="Skyhitz" />
@@ -36,7 +36,7 @@ class HeadComponent extends React.Component {
         <meta property="og:title" content="Skyhitz" />
         <meta
           property="og:description"
-          content="Generate recurring revenue from your music videos, get paid anywhere in the world."
+          content="Platform where artists can generate revenue from their music videos. Fans can discover, stream and upvote their favorite music without limits."
         />
         <meta property="og:type" content="website" />
         <meta

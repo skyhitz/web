@@ -13,6 +13,7 @@ import { faBan } from '@fortawesome/free-solid-svg-icons/faBan';
 import { faListUl } from '@fortawesome/free-solid-svg-icons/faListUl';
 import { faCoins } from '@fortawesome/free-solid-svg-icons/faCoins';
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons/faTrophy';
 
 library.add(
   faAndroid,
@@ -25,7 +26,8 @@ library.add(
   faBan,
   faListUl,
   faCoins,
-  faTimes
+  faTimes,
+  faTrophy
 );
 
 export default class extends React.PureComponent {
