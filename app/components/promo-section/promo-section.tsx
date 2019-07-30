@@ -105,7 +105,7 @@ const PromoSection = () => (
         margin-top: 20px;
       }
       .icon {
-        margin-bottom: 40px;
+        margin-bottom: 41px;
         margin-top: 14px;
       }
       a {
