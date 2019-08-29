@@ -20,44 +20,44 @@
  */
 
 const Platform = {
-  Android: function(userAgent) {
-    return /Android/i.test(userAgent) && !Platform.Windows(userAgent);
+  Android(userAgent) {
+    return userAgent.indexOf('android') > -1;
   },
-  BlackBerry: function(userAgent) {
+  BlackBerry(userAgent) {
     return /BlackBerry|BB10|PlayBook/i.test(userAgent);
   },
-  iPhone: function(userAgent) {
+  iPhone(userAgent) {
     return (
       /iPhone/i.test(userAgent) &&
       !Platform.iPad(userAgent) &&
       !Platform.Windows(userAgent)
     );
   },
-  iPod: function(userAgent) {
+  iPod(userAgent) {
     return /iPod/i.test(userAgent);
   },
-  iPad: function(userAgent) {
+  iPad(userAgent) {
     return /iPad/i.test(userAgent);
   },
-  iOS: function(userAgent) {
+  iOS(userAgent) {
     return (
       Platform.iPad(userAgent) ||
       Platform.iPod(userAgent) ||
       Platform.iPhone(userAgent)
     );
   },
-  Opera: function(userAgent) {
+  Opera(userAgent) {
     return /Opera Mini/i.test(userAgent);
   },
-  Windows: function(userAgent) {
+  Windows(userAgent) {
     return /Windows Phone|IEMobile|WPDesktop/i.test(userAgent);
   },
-  KindleFire: function(userAgent) {
+  KindleFire(userAgent) {
     return /Kindle Fire|Silk|KFAPWA|KFSOWI|KFJWA|KFJWI|KFAPWI|KFAPWI|KFOT|KFTT|KFTHWI|KFTHWA|KFASWI|KFTBWI|KFMEWI|KFFOWI|KFSAWA|KFSAWI|KFARWI/i.test(
       userAgent
     );
   },
-  any: function(userAgent) {
+  any(userAgent) {
     return (
       Platform.Android(userAgent) ||
       Platform.BlackBerry(userAgent) ||
@@ -65,7 +65,7 @@ const Platform = {
       Platform.Opera(userAgent) ||
       Platform.Windows(userAgent)
     );
-  }
+  },
 };
 
 export default Platform;
