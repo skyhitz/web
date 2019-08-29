@@ -21,7 +21,7 @@
 
 const Platform = {
   Android(userAgent) {
-    return userAgent.indexOf('android') > -1;
+    return /Android/i.test(userAgent) && !Platform.Windows(userAgent);
   },
   BlackBerry(userAgent) {
     return /BlackBerry|BB10|PlayBook/i.test(userAgent);
