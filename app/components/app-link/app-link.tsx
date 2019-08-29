@@ -13,7 +13,7 @@ export default class AppLink extends React.Component<Props> {
 
   render() {
     let appUrl;
-    if (Platform.Android(this.props.userAgent)) {
+    if (Platform.Android(navigator.userAgent)) {
       appUrl =
         'https://play.google.com/store/apps/details?id=com.skyhitz.skyhitz';
     } else {
