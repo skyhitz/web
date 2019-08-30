@@ -1,24 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import AppLink from '../app-link/app-link';
+import IOSLink from '../app-link/ios-link';
+import AndroidLink from '../app-link/android-link';
 
 export default class AppButton extends React.Component {
   public render() {
     return (
       <div className="btn-wrap">
-        <AppLink>
-          <button>
-            Get the app
-            <div className="icons-wrap">
+        <button>
+          Get the app
+          <div className="icons-wrap">
+            <IOSLink>
               <div className="icon">
                 <FontAwesomeIcon icon={['fab', 'apple']} size="2x" />
               </div>
+            </IOSLink>
+            <AndroidLink>
               <div className="icon">
                 <FontAwesomeIcon icon={['fab', 'android']} size="2x" />
               </div>
-            </div>
-          </button>
-        </AppLink>
+            </AndroidLink>
+          </div>
+        </button>
         <style jsx>{`
           .icons-wrap {
             display: inline-block;
