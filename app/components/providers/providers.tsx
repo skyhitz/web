@@ -7,8 +7,8 @@ import {
   resetPasswordValidationStore,
   updatePasswordValidationStore,
   usernameAndEmailValidationStore,
-  paymentsStore
-} from 'skyhitz-common';
+  paymentsStore,
+} from '../../../skyhitz-common';
 
 export default class Providers extends React.Component {
   render() {

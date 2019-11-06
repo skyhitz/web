@@ -3,22 +3,22 @@ import SocialLinks from '../social-links/social-links';
 import Colors from 'app/components/colors/colors';
 
 const Footer = () => (
-  <footer className='footer fluid-width'>
+  <footer className="footer fluid-width">
     <SocialLinks />
-    <div className='footer-nav-links float-right'>
+    <div className="footer-nav-links float-right">
       <a
-        className='footer-nav-link hover-color js-ga-track'
-        target='_blank'
-        rel='noopener noreferrer'
-        href='/terms-of-use'
+        className="footer-nav-link hover-color js-ga-track"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="/terms-of-use"
       >
         Terms of Use
       </a>
       <a
-        className='footer-nav-link hover-color js-ga-track'
-        target='_blank'
-        rel='noopener noreferrer'
-        href='/privacy-policy'
+        className="footer-nav-link hover-color js-ga-track"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="/privacy-policy"
       >
         Privacy Policy
       </a>

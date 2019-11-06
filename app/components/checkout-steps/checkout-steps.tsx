@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import MultiStep from './react-multistep';
+import { DownloadStep } from './download-step';
 import { AuthStep } from './auth-step';
 import PaymentStep from './payment-step';
 import { ConfirmationStep } from './confirmation-step';
 import './checkout-steps.scss';
 
 const steps = [
+  { name: 'Download', component: <DownloadStep /> },
   { name: 'Sign In', component: <AuthStep /> },
   { name: 'Subscribe', component: <PaymentStep /> },
-  { name: 'Confirmation', component: <ConfirmationStep /> }
+  { name: 'Confirmation', component: <ConfirmationStep /> },
 ];
 
 export default class CheckoutSteps extends Component {
