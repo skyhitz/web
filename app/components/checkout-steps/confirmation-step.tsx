@@ -8,7 +8,8 @@ export class ConfirmationStep extends React.Component<any, any> {
       <div className="confirmation-wrapper">
         <h3 className="confirmation-title">Thanks for subscribing!</h3>
         <p>
-          Make sure to download our app. Start flipping beats with your credits.
+          Make sure to download our app. Start flipping music videos with your
+          credits.
         </p>
         <AppButton />
       </div>
