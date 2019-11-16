@@ -1,7 +1,6 @@
 import React from 'react';
 import { inject } from 'mobx-react';
 import './email-auth-form.scss';
-import AppLink from 'app/components/app-link/app-link';
 
 interface Props {
   usernameOrEmail: string;
@@ -27,7 +26,7 @@ interface Props {
   signIn: stores.sessionStore.signIn.bind(stores.sessionStore),
   refreshSubscription: stores.paymentsStore.refreshSubscription.bind(
     stores.paymentsStore
-  )
+  ),
 }))
 export default class EmailAuthForm extends React.Component<any, Props> {
   constructor(props) {
@@ -36,7 +35,7 @@ export default class EmailAuthForm extends React.Component<any, Props> {
       usernameOrEmail: '',
       password: '',
       loading: false,
-      showAppLink: false
+      showAppLink: false,
     };
   }
 
@@ -59,7 +58,7 @@ export default class EmailAuthForm extends React.Component<any, Props> {
     try {
       await this.props.signIn({
         usernameOrEmail: this.state.usernameOrEmail,
-        password: this.state.password
+        password: this.state.password,
       });
       await this.props.refreshSubscription();
       this.setState({ loading: false });
@@ -68,7 +67,7 @@ export default class EmailAuthForm extends React.Component<any, Props> {
         e ===
         'Sorry, your username or email does not exist. Sign up to create an account.'
       ) {
-        e = 'Username or email does not exist. Sign up through our mobile app.';
+        e = 'Sign up through our mobile app.';
         this.setState({ showAppLink: true, loading: false });
         this.props.setBackendError(e);
         return;
@@ -81,18 +80,18 @@ export default class EmailAuthForm extends React.Component<any, Props> {
   render() {
     return (
       <div>
-        <div className='error-container'>
+        <div className="error-container">
           {this.state.showAppLink ? (
-            <AppLink>{this.props.error}</AppLink>
+            <div>{this.props.error}</div>
           ) : (
             this.props.error
           )}
         </div>
         <form onSubmit={this.signIn.bind(this)}>
           <input
-            type='text'
-            placeholder='Email or username'
-            className='email-input'
+            type="text"
+            placeholder="Email or username"
+            className="email-input"
             value={this.state.usernameOrEmail}
             onChange={this.handleUsernameOrEmailChange.bind(this)}
             onBlur={() => {
@@ -100,18 +99,18 @@ export default class EmailAuthForm extends React.Component<any, Props> {
             }}
           />
           <input
-            type='password'
-            placeholder='Password'
-            name='password'
-            className='email-input'
+            type="password"
+            placeholder="Password"
+            name="password"
+            className="email-input"
             value={this.state.password}
             onChange={this.handlePasswordChange.bind(this)}
             onBlur={() => this.props.validatePassword(this.state.password)}
           />
           <input
-            type='submit'
-            value='Log In'
-            className='submit-btn btn glow'
+            type="submit"
+            value="Log In"
+            className="submit-btn btn glow"
             disabled={!this.props.validForm}
           />
         </form>

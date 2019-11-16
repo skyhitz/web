@@ -19,17 +19,17 @@ const checkNavState = (currentStep, stepsLength) => {
   if (currentStep > 0 && currentStep < stepsLength - 1) {
     return {
       showPreviousBtn: true,
-      showNextBtn: true
+      showNextBtn: true,
     };
   } else if (currentStep === 0) {
     return {
       showPreviousBtn: false,
-      showNextBtn: true
+      showNextBtn: true,
     };
   } else {
     return {
       showPreviousBtn: true,
-      showNextBtn: false
+      showNextBtn: false,
     };
   }
 };
@@ -43,23 +43,28 @@ interface Props {
 
 @inject((stores: any) => ({
   user: stores.sessionStore.user,
-  subscribed: stores.paymentsStore.subscribed
+  subscribed: stores.paymentsStore.subscribed,
+  downloadedApp: stores.paymentsStore.downloadedApp,
 }))
 export default class MultiStep extends React.Component<Props> {
   state = {
     showPreviousBtn: false,
     showNextBtn: false,
     compState: 0,
-    navState: getNavStates(0, this.props.steps.length)
+    navState: getNavStates(0, this.props.steps.length),
   };
 
   handleState(props) {
     if (props.subscribed) {
-      return this.setNavState(2);
+      return this.setNavState(3);
     }
 
     if (props.user) {
-      this.setNavState(1);
+      return this.setNavState(2);
+    }
+
+    if (props.downloadedApp) {
+      return this.setNavState(1);
     }
   }
 
@@ -73,27 +78,27 @@ export default class MultiStep extends React.Component<Props> {
 
   setNavState = next => {
     this.setState({
-      navState: getNavStates(next, this.props.steps.length)
+      navState: getNavStates(next, this.props.steps.length),
     });
     if (next < this.props.steps.length) {
       this.setState({ compState: next });
     }
     this.setState(checkNavState(next, this.props.steps.length));
-  }
+  };
 
   next = () => {
     this.setNavState(this.state.compState + 1);
-  }
+  };
 
   previous = () => {
     if (this.state.compState > 0) {
       this.setNavState(this.state.compState - 1);
     }
-  }
+  };
 
   getClassName = (className, i) => {
     return className + '-' + this.state.navState.styles[i];
-  }
+  };
 
   renderSteps = () => {
     return this.props.steps.map((_, i) => (
@@ -101,13 +106,13 @@ export default class MultiStep extends React.Component<Props> {
         <span>{this.props.steps[i].name}</span>
       </li>
     ));
-  }
+  };
   static defaultProps: { showNavigation: boolean };
 
   render() {
     return (
-      <div className='container'>
-        <ol className='progtrckr'>{this.renderSteps()}</ol>
+      <div className="container">
+        <ol className="progtrckr">{this.renderSteps()}</ol>
         {this.props.steps[this.state.compState].component}
       </div>
     );
@@ -115,5 +120,5 @@ export default class MultiStep extends React.Component<Props> {
 }
 
 MultiStep.defaultProps = {
-  showNavigation: true
+  showNavigation: true,
 };

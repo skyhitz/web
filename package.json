@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "now-build": "next build",
-    "dev": "SKYHITZ_ENV=staging next dev",
+    "dev": "SKYHITZ_ENV=development next dev",
     "export": "next export",
     "analyze": "BUNDLE_ANALYZE=both yarn now-build"
   },
   "author": "Alejo Mendoza",
   "license": "ISC",
   "dependencies": {
+    "algoliasearch": "^3.32.0",
+    "apollo-client": "^1.9.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
@@ -20,6 +22,11 @@
     "@types/react": "^16.4.9",
     "@types/styled-jsx": "^2.2.4",
     "@zeit/next-typescript": "1.1.0",
+    "graphql-tag": "^2.4.2",
+    "immutable": "^3.8.1",
+    "lodash.debounce": "^4.0.8",
+    "lodash.merge": "4.6.0",
+    "mobx": "^3.3.0",
     "classnames": "2.2.6",
     "compression": "^1.7.3",
     "express": "^4.16.3",
@@ -30,15 +37,14 @@
     "prop-types": "15.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-facebook-login": "^4.0.1",
     "react-google-tag-manager": "^2.2.1",
     "react-lazyload": "^2.3.0",
     "react-lifecycles-compat": "3.0.4",
     "react-minimalist-portal": "2.3.1",
     "react-stripe-elements": "^2.0.1",
     "react-transition-group": "^2.4.0",
-    "skyhitz-common": "skyhitz/common.git#ad2d5e8dbcfe3155e3881246ac928f71e7808619",
-    "swiper": "3.4.0"
+    "swiper": "3.4.0",
+    "typescript": "^2.2.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.0.0-rc.1",

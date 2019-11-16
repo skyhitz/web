@@ -935,11 +935,6 @@
     humps "^2.0.1"
     prop-types "^15.5.10"
 
-"@types/algoliasearch@^3.30.1":
-  version "3.30.1"
-  resolved "https://registry.yarnpkg.com/@types/algoliasearch/-/algoliasearch-3.30.1.tgz#0cb9b918ba7f94c1e60527ba74273ca276d17137"
-  integrity sha512-UKzBzTH2UDXiLSb/Zyf9jqf2y8rScJXeLBz1Jie8VUZv6xhg1lPaqgkEsTtc8Qi7HYLjlnw768v0CEsCxsmLOw==
-
 "@types/graphql@0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.10.2.tgz#d7c79acbaa17453b6681c80c34b38fcb10c4c08c"
@@ -948,19 +943,9 @@
   version "10.5.8"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.8.tgz#6f14ccecad1d19332f063a6a764f8907801fece0"
 
-"@types/node@^8.0.31":
-  version "8.10.25"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.25.tgz#801fe4e39372cef18f268db880a5fbfcf71adc7e"
-
 "@types/prop-types@*":
   version "15.5.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-native@^0.48.9":
-  version "0.48.10"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.48.10.tgz#c808a3ed381b2f5d87f07853ae29def8d4ad9f81"
   dependencies:
     "@types/react" "*"
 
@@ -3048,13 +3033,6 @@ fbjs@^0.8.16:
     promise "^7.1.1"
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
-
-fetch-everywhere@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/fetch-everywhere/-/fetch-everywhere-1.0.5.tgz#b2497f47a57d9026b3907c09756acf5f4bd34e8b"
-  dependencies:
-    node-fetch "^1.0.1"
-    whatwg-fetch ">=0.10.0"
 
 figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -5631,10 +5609,6 @@ react-error-overlay@5.1.4:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.4.tgz#88dfb88857c18ceb3b9f95076f850d7121776991"
   integrity sha512-fp+U98OMZcnduQ+NSEiQa4s/XMsbp+5KlydmkbESOw4P69iWZ68ZMFM5a2BuE0FgqPBKApJyRuYHR95jM8lAmg==
 
-react-facebook-login@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-facebook-login/-/react-facebook-login-4.0.1.tgz#7d43672ee86e3f2cd9e8758de1e61eb66a212611"
-
 react-google-tag-manager@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-google-tag-manager/-/react-google-tag-manager-2.2.1.tgz#b0659c7b19d9263c7cb45d3c019f506529af9077"
@@ -6222,23 +6196,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-skyhitz-common@skyhitz/common.git#ad2d5e8dbcfe3155e3881246ac928f71e7808619:
-  version "0.0.17"
-  resolved "https://codeload.github.com/skyhitz/common/tar.gz/ad2d5e8dbcfe3155e3881246ac928f71e7808619"
-  dependencies:
-    "@types/algoliasearch" "^3.30.1"
-    "@types/node" "^8.0.31"
-    "@types/react-native" "^0.48.9"
-    algoliasearch "^3.32.0"
-    apollo-client "^1.9.3"
-    fetch-everywhere "^1.0.5"
-    graphql-tag "^2.4.2"
-    immutable "^3.8.1"
-    lodash.debounce "^4.0.8"
-    lodash.merge "4.6.0"
-    mobx "^3.3.0"
-    typescript "^2.2.2"
-
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -6823,6 +6780,7 @@ typedarray@^0.0.6:
 typescript@^2.2.2:
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 ua-parser-js@^0.7.18:
   version "0.7.18"

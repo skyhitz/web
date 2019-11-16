@@ -5,23 +5,23 @@ import './checkout-modal.scss';
 
 export default class CheckoutModal extends React.Component {
   state = {
-    open: false
+    open: false,
   };
 
   onOpenModal = () => {
     this.setState({ open: true });
-  }
+  };
 
   onCloseModal = () => {
     this.setState({ open: false });
-  }
+  };
 
   render() {
     const { open } = this.state;
     return (
       <div>
-        <button className='subscribe-btn' onClick={this.onOpenModal}>
-          Subscribe
+        <button className="subscribe-btn" onClick={this.onOpenModal}>
+          Get Started ->
         </button>
         <Modal
           open={open}

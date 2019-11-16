@@ -1,18 +1,17 @@
 import React from 'react';
-import AppButton from 'app/components/app-button/app-button';
+import CheckoutModal from '../checkout-modal/checkout-modal';
 
 export default class MainWrapper extends React.Component {
   render() {
     return (
       <div className="wrapper">
         <div className="column">
-          <h1 className="title">Earn crypto with music</h1>
+          <h1 className="title">Buy and sell music videos</h1>
           <h2 className="subtitle">
-            Platform where artists can generate revenue from their music videos.
-            Fans can discover, stream and upvote their favorite music without
-            limits.
+            Decentralized video music market. Upload original content and
+            monetize it online.
           </h2>
-          <AppButton />
+          <CheckoutModal />
         </div>
         <style jsx>{`
           .wrapper {
@@ -22,14 +21,14 @@ export default class MainWrapper extends React.Component {
             display: table;
             color: white;
             font-family: Raleway;
-            padding-top: 70px;
             max-width: 800px;
-            height: 560px;
+            height: calc(100vh - 60px);
           }
           .column {
             display: inline-block;
             vertical-align: top;
             width: 100%;
+            padding-top: 18%;
           }
           .screens-column {
             display: inline-block;
@@ -58,12 +57,9 @@ export default class MainWrapper extends React.Component {
           }
 
           @media (max-width: 849px) {
-            .wrapper {
-              height: 260px;
-            }
             .column {
               width: 100%;
-              padding-top: 30px;
+              padding-top: 25%;
             }
           }
 
@@ -95,7 +91,6 @@ export default class MainWrapper extends React.Component {
             }
             .column {
               width: 100%;
-              padding-top: 100px;
             }
           }
         `}</style>
