@@ -12,7 +12,7 @@ class HeadComponent extends React.Component {
         />
         <meta
           name="keywords"
-          content="skyhitz, music player, stream, streaming, rankings, hits, songs, songwriters, artists, share, listen, like, top, list, bands, promotion, online, radio, singer, performer, producer, creative, free, music, social, discover, play, concerts, videos, live, festival"
+          content="skyhitz, music, beats, sell, buy, decentralized, producers, beatmakers, beatmaker, artists, promote, crypto, creators, flip, market, stellar, xlm"
         />
         <meta name="twitter:card" content="app" />
         <meta name="twitter:site" content="@skyhitzio" />
@@ -41,7 +41,7 @@ class HeadComponent extends React.Component {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/skyhitz/image/upload/v1564436559/web/android-landing-google-store-link.png"
+          content="https://res.cloudinary.com/skyhitz/image/upload/v1574102962/web/skyhitz-social.png"
         />
         <meta property="og:url" content="https://skyhitz.io" />
         <meta property="fb:app_id" content="564403243666491" />
