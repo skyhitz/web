@@ -5,7 +5,7 @@ class HeadComponent extends React.Component {
   render() {
     return (
       <Head>
-        <meta name="title" content="Skyhitz - Earn crypto with music" />
+        <meta name="title" content="Skyhitz - Decentralized video music market" />
         <meta
           name="description"
           content="Buy and sell music videos. Decentralized video music market. Upload original content and monetize it online."
