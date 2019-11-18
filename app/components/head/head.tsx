@@ -48,7 +48,7 @@ class HeadComponent extends React.Component {
         <meta property="og:site_name" content="Skyhitz" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000" />
-        <title>Skyhitz - Earn crypto with music</title>
+        <title>Skyhitz - Decentralized video music market</title>
         <link rel="canonical" href="https://skyhitz.io" />
         <link rel="manifest" href="/static/manifest.json" />
         <link
