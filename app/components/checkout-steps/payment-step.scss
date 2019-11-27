@@ -2,6 +2,10 @@
   margin-top: 0px;
   margin-left: 30px;
   margin-right: 30px;
+  @media (max-width: 400px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .submit-payment {
@@ -31,14 +35,22 @@
   text-align: center;
   cursor: pointer;
   height: 166px;
+  @media (max-width: 400px) {
+    width: 150px;
+    height: 168px;
+  }
 }
 
-.radio:hover, .radio.selected, .radio.selected #credits-input {
+.radio:hover,
+.radio.selected,
+.radio.selected #credits-input {
   border-color: #777;
 }
 
 .options {
-  a, a:hover, a label {
+  a,
+  a:hover,
+  a label {
     color: black;
     cursor: pointer;
   }
@@ -84,7 +96,7 @@ h3 {
   height: 39px;
   font-weight: 600;
   font-size: 30px;
-  max-width: 180px;
+  width: 100%;
   text-align: center;
   padding: 0;
   margin: 0;
