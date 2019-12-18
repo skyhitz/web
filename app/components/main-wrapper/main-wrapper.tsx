@@ -65,10 +65,12 @@ export default class MainWrapper extends React.Component {
 
           @media (max-width: 420px) {
             .title {
-              font-size: 24px;
+              font-size: 38px;
+              margin-top: 12%;
+              margin-bottom: 12%;
             }
             .subtitle {
-              font-size: 14px;
+              font-size: 16px;
             }
           }
 
