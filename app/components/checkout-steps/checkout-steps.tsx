@@ -10,7 +10,7 @@ const steps = [
   { name: 'Download', component: <DownloadStep /> },
   { name: 'Sign In', component: <AuthStep /> },
   { name: 'Subscribe', component: <PaymentStep /> },
-  { name: 'Confirmation', component: <ConfirmationStep /> },
+  { name: 'Done', component: <ConfirmationStep /> },
 ];
 
 export default class CheckoutSteps extends Component {
