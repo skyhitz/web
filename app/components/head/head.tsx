@@ -5,7 +5,10 @@ class HeadComponent extends React.Component {
   render() {
     return (
       <Head>
-        <meta name="title" content="Skyhitz - Decentralized video music market" />
+        <meta
+          name="title"
+          content="Skyhitz - Decentralized video music market"
+        />
         <meta
           name="description"
           content="Buy and sell music videos. Decentralized video music market. Upload original content and monetize it online."
@@ -46,6 +49,10 @@ class HeadComponent extends React.Component {
         <meta property="og:url" content="https://skyhitz.io" />
         <meta property="fb:app_id" content="564403243666491" />
         <meta property="og:site_name" content="Skyhitz" />
+        <meta
+          name="p:domain_verify"
+          content="418ab0845b3db4cf3f4c9efe8ad0f80e"
+        />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000" />
         <title>Skyhitz - Decentralized video music market</title>
